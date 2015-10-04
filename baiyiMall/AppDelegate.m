@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AVOSCloud/AVOSCloud.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // LeanCloud网络接口
+    [AVOSCloud setApplicationId:@"{{BFjkOiRlXiAyxW3M3w94JYhx}}"
+                       clientKey:@"{{I7hUmAruvyRl9ozl7kV9wUb7}}"];
     return YES;
 }
 
