@@ -18,6 +18,9 @@
 		4D573FDE1BC298B6008EBC19 /* personalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D573FDD1BC298B6008EBC19 /* personalViewController.m */; };
 		4D573FE11BC29FAB008EBC19 /* newsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D573FE01BC29FAB008EBC19 /* newsViewController.m */; };
 		4D573FE41BC29FCE008EBC19 /* moreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D573FE31BC29FCE008EBC19 /* moreViewController.m */; };
+		4D573FEB1BC2AEB0008EBC19 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D573FEA1BC2AEB0008EBC19 /* loginViewController.m */; };
+		4D573FEE1BC2C8D1008EBC19 /* signUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D573FED1BC2C8D1008EBC19 /* signUpViewController.m */; };
+		4D573FF11BC2D97C008EBC19 /* oneUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D573FF01BC2D97C008EBC19 /* oneUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,12 @@
 		4D573FE01BC29FAB008EBC19 /* newsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newsViewController.m; sourceTree = "<group>"; };
 		4D573FE21BC29FCE008EBC19 /* moreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = moreViewController.h; sourceTree = "<group>"; };
 		4D573FE31BC29FCE008EBC19 /* moreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = moreViewController.m; sourceTree = "<group>"; };
+		4D573FE91BC2AEB0008EBC19 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		4D573FEA1BC2AEB0008EBC19 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
+		4D573FEC1BC2C8D1008EBC19 /* signUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signUpViewController.h; sourceTree = "<group>"; };
+		4D573FED1BC2C8D1008EBC19 /* signUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = signUpViewController.m; sourceTree = "<group>"; };
+		4D573FEF1BC2D97C008EBC19 /* oneUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oneUser.h; sourceTree = "<group>"; };
+		4D573FF01BC2D97C008EBC19 /* oneUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oneUser.m; sourceTree = "<group>"; };
 		774AFDA5B213929E169E054D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +106,7 @@
 		4D0D5B001BC155990042C072 /* baiyiMall */ = {
 			isa = PBXGroup;
 			children = (
+				4D573FE51BC2AC6D008EBC19 /* class */,
 				4D573FD81BC2976D008EBC19 /* viewControllerClass */,
 				4D0D5B051BC155990042C072 /* AppDelegate.h */,
 				4D0D5B061BC155990042C072 /* AppDelegate.m */,
@@ -145,8 +155,21 @@
 				4D573FE01BC29FAB008EBC19 /* newsViewController.m */,
 				4D573FE21BC29FCE008EBC19 /* moreViewController.h */,
 				4D573FE31BC29FCE008EBC19 /* moreViewController.m */,
+				4D573FE91BC2AEB0008EBC19 /* loginViewController.h */,
+				4D573FEA1BC2AEB0008EBC19 /* loginViewController.m */,
+				4D573FEC1BC2C8D1008EBC19 /* signUpViewController.h */,
+				4D573FED1BC2C8D1008EBC19 /* signUpViewController.m */,
 			);
 			name = viewControllerClass;
+			sourceTree = "<group>";
+		};
+		4D573FE51BC2AC6D008EBC19 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				4D573FEF1BC2D97C008EBC19 /* oneUser.h */,
+				4D573FF01BC2D97C008EBC19 /* oneUser.m */,
+			);
+			name = class;
 			sourceTree = "<group>";
 		};
 		9D48FBF71987D0714E679D54 /* Frameworks */ = {
@@ -301,9 +324,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D573FEB1BC2AEB0008EBC19 /* loginViewController.m in Sources */,
 				4D0D5B071BC155990042C072 /* AppDelegate.m in Sources */,
 				4D573FE41BC29FCE008EBC19 /* moreViewController.m in Sources */,
+				4D573FEE1BC2C8D1008EBC19 /* signUpViewController.m in Sources */,
 				4D0D5B041BC155990042C072 /* main.m in Sources */,
+				4D573FF11BC2D97C008EBC19 /* oneUser.m in Sources */,
 				4D573FE11BC29FAB008EBC19 /* newsViewController.m in Sources */,
 				4D573FDE1BC298B6008EBC19 /* personalViewController.m in Sources */,
 				4D573FDB1BC2982A008EBC19 /* mainpageViewController.m in Sources */,

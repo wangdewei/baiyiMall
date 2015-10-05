@@ -11,6 +11,8 @@
 #import "personalViewController.h"
 #import "newsViewController.h"
 #import "moreViewController.h"
+#import "loginViewController.h"
+#import "oneUser.h"
 #import <AVOSCloud/AVOSCloud.h>
 
 @interface AppDelegate ()
@@ -25,9 +27,19 @@
     // LeanCloud网络接口
     [AVOSCloud setApplicationId:@"{{BFjkOiRlXiAyxW3M3w94JYhx}}"
                        clientKey:@"{{I7hUmAruvyRl9ozl7kV9wUb7}}"];
-    
     self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor=[UIColor whiteColor];
+    oneUser *currentUser=[oneUser currentUser];
+    if(!currentUser)
+    {
+        loginViewController *loginVC=[[loginViewController alloc] init];
+        self.window.rootViewController=[[UINavigationController alloc] initWithRootViewController:loginVC];
+        return YES;
+    }
+
+    
+    
+    
     mainpageViewController *mainpageVC=[[mainpageViewController alloc] init];
     personalViewController *personalVC=[[personalViewController alloc] init];
     newsViewController *newsVC=[[newsViewController alloc] init];
@@ -39,8 +51,8 @@
     UITabBarController *tabbarVC=[[UITabBarController alloc] init];
     tabbarVC.viewControllers=[NSArray arrayWithObjects:mainpageVC,newsVC,personalVC,moreVC,nil];
     self.window.rootViewController=tabbarVC;
-    [self.window makeKeyAndVisible];
-    return YES;
+        [self.window makeKeyAndVisible];
+        return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
