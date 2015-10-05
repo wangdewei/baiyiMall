@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "mainpageViewController.h"
+#import "personalViewController.h"
+#import "newsViewController.h"
+#import "moreViewController.h"
 #import <AVOSCloud/AVOSCloud.h>
 
 @interface AppDelegate ()
@@ -21,6 +25,21 @@
     // LeanCloud网络接口
     [AVOSCloud setApplicationId:@"{{BFjkOiRlXiAyxW3M3w94JYhx}}"
                        clientKey:@"{{I7hUmAruvyRl9ozl7kV9wUb7}}"];
+    
+    self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor=[UIColor whiteColor];
+    mainpageViewController *mainpageVC=[[mainpageViewController alloc] init];
+    personalViewController *personalVC=[[personalViewController alloc] init];
+    newsViewController *newsVC=[[newsViewController alloc] init];
+    moreViewController *moreVC=[[moreViewController alloc] init];
+    mainpageVC.tabBarItem=[[UITabBarItem alloc] initWithTitle:@"主页" image:nil tag:0];
+    newsVC.tabBarItem=[[UITabBarItem alloc] initWithTitle:@"消息" image:nil tag:1];
+    personalVC.tabBarItem=[[UITabBarItem alloc] initWithTitle:@"个人" image:nil tag:2];
+    moreVC.tabBarItem=[[UITabBarItem alloc] initWithTitle:@"更多" image:nil tag:3];
+    UITabBarController *tabbarVC=[[UITabBarController alloc] init];
+    tabbarVC.viewControllers=[NSArray arrayWithObjects:mainpageVC,newsVC,personalVC,moreVC,nil];
+    self.window.rootViewController=tabbarVC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
