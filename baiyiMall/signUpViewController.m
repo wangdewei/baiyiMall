@@ -7,7 +7,7 @@
 //
 
 #import "signUpViewController.h"
-#import "oneUser.h"
+#import <AVOSCloud/AVOSCloud.h>
 
 @interface signUpViewController ()
 
@@ -42,7 +42,7 @@
 
 - (void)signUp:(UIButton *)btn
 {
-    oneUser *user=[oneUser user];
+    AVUser *user=[AVUser user];
     user.username=usernameTf.text;
     user.password=passwordTf.text;
     user.email=emailTf.text;
@@ -50,6 +50,7 @@
      {
          if(succeeded)
          {
+             [user setObject:nil forKey:@"headImage"];
              NSLog(@"成功注册");
          }
          else

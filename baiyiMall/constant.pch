@@ -1,0 +1,24 @@
+//
+//  constant.pch
+//  baiyiMall
+//
+//  Created by Dv_wang on 15-10-6.
+//  Copyright (c) 2015年 Dv_wang. All rights reserved.
+//
+
+#ifndef baiyiMall_constant_pch
+#define baiyiMall_constant_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//leancloud
+#define LEANCLOUD_ID     @"BFjkOiRlXiAyxW3M3w94JYhx"
+#define LEANCLOUD_KEY    @"I7hUmAruvyRl9ozl7kV9wUb7"
+
+//屏幕尺寸
+#define SCREEN_FRAME   [[UIScreen mainScreen] bounds]
+#define SCREEN_WIDTH   [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT  [[UIScreen mainScreen] bounds].size.height
+
+
+#endif

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface personalViewController : UIViewController
+@interface personalViewController : UIViewController<UIAlertViewDelegate>
+
 
 @end
