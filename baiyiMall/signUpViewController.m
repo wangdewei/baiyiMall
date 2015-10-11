@@ -50,7 +50,8 @@
      {
          if(succeeded)
          {
-             [user setObject:nil forKey:@"headImage"];
+//             [user setObject:nil forKey:@"headImage"];
+//             [user setObject:nil forKey:@"myShow"];
              NSLog(@"成功注册");
          }
          else

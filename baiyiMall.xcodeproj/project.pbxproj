@@ -13,6 +13,7 @@
 		4D0D5B0D1BC155990042C072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0D5B0B1BC155990042C072 /* Main.storyboard */; };
 		4D0D5B121BC155990042C072 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0D5B101BC155990042C072 /* LaunchScreen.xib */; };
 		4D0D5B1E1BC155990042C072 /* baiyiMallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D5B1D1BC155990042C072 /* baiyiMallTests.m */; };
+		4D1BAF5E1BC662B800DFA591 /* myShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1BAF5D1BC662B800DFA591 /* myShopViewController.m */; };
 		4D2553141BC385F1008DB5EB /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2553131BC385F1008DB5EB /* TabBarController.m */; };
 		4D2553161BC3A447008DB5EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2553151BC3A447008DB5EB /* Images.xcassets */; };
 		4D2553511BC3E73E008DB5EB /* 顶端图片.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D2553501BC3E73E008DB5EB /* 顶端图片.jpg */; };
@@ -23,6 +24,7 @@
 		4D573FE41BC29FCE008EBC19 /* moreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D573FE31BC29FCE008EBC19 /* moreViewController.m */; };
 		4D573FEB1BC2AEB0008EBC19 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D573FEA1BC2AEB0008EBC19 /* loginViewController.m */; };
 		4D573FEE1BC2C8D1008EBC19 /* signUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D573FED1BC2C8D1008EBC19 /* signUpViewController.m */; };
+		4DF85B921BC7E48C00739962 /* setMyShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF85B911BC7E48C00739962 /* setMyShopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		4D0D5B171BC155990042C072 /* baiyiMallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baiyiMallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0D5B1C1BC155990042C072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D0D5B1D1BC155990042C072 /* baiyiMallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baiyiMallTests.m; sourceTree = "<group>"; };
+		4D1BAF5C1BC662B800DFA591 /* myShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myShopViewController.h; sourceTree = "<group>"; };
+		4D1BAF5D1BC662B800DFA591 /* myShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myShopViewController.m; sourceTree = "<group>"; };
 		4D2553121BC385F1008DB5EB /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		4D2553131BC385F1008DB5EB /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		4D2553151BC3A447008DB5EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 		4D573FEA1BC2AEB0008EBC19 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
 		4D573FEC1BC2C8D1008EBC19 /* signUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signUpViewController.h; sourceTree = "<group>"; };
 		4D573FED1BC2C8D1008EBC19 /* signUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = signUpViewController.m; sourceTree = "<group>"; };
+		4DF85B901BC7E48C00739962 /* setMyShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setMyShopViewController.h; sourceTree = "<group>"; };
+		4DF85B911BC7E48C00739962 /* setMyShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setMyShopViewController.m; sourceTree = "<group>"; };
 		774AFDA5B213929E169E054D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +183,10 @@
 				4D573FED1BC2C8D1008EBC19 /* signUpViewController.m */,
 				4D2553121BC385F1008DB5EB /* TabBarController.h */,
 				4D2553131BC385F1008DB5EB /* TabBarController.m */,
+				4D1BAF5C1BC662B800DFA591 /* myShopViewController.h */,
+				4D1BAF5D1BC662B800DFA591 /* myShopViewController.m */,
+				4DF85B901BC7E48C00739962 /* setMyShopViewController.h */,
+				4DF85B911BC7E48C00739962 /* setMyShopViewController.m */,
 			);
 			name = viewControllerClass;
 			sourceTree = "<group>";
@@ -346,10 +356,12 @@
 				4D0D5B071BC155990042C072 /* AppDelegate.m in Sources */,
 				4D573FE41BC29FCE008EBC19 /* moreViewController.m in Sources */,
 				4D573FEE1BC2C8D1008EBC19 /* signUpViewController.m in Sources */,
+				4DF85B921BC7E48C00739962 /* setMyShopViewController.m in Sources */,
 				4D0D5B041BC155990042C072 /* main.m in Sources */,
 				4D573FE11BC29FAB008EBC19 /* newsViewController.m in Sources */,
 				4D2553141BC385F1008DB5EB /* TabBarController.m in Sources */,
 				4D573FDE1BC298B6008EBC19 /* personalViewController.m in Sources */,
+				4D1BAF5E1BC662B800DFA591 /* myShopViewController.m in Sources */,
 				4D573FDB1BC2982A008EBC19 /* mainpageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

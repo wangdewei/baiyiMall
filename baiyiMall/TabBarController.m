@@ -18,13 +18,14 @@
     [super viewDidLoad];
     mainpageViewController *mainpageVC=[[mainpageViewController alloc] init];
     personalViewController *personalVC=[[personalViewController alloc] init];
+    UINavigationController *personalNC=[[UINavigationController alloc] initWithRootViewController:personalVC];
     newsViewController *newsVC=[[newsViewController alloc] init];
     moreViewController *moreVC=[[moreViewController alloc] init];
     mainpageVC.tabBarItem=[[UITabBarItem alloc] initWithTitle:@"主页" image:nil tag:0];
     newsVC.tabBarItem=[[UITabBarItem alloc] initWithTitle:@"消息" image:nil tag:1];
-    personalVC.tabBarItem=[[UITabBarItem alloc] initWithTitle:@"个人" image:nil tag:2];
+    personalNC.tabBarItem=[[UITabBarItem alloc] initWithTitle:@"个人" image:nil tag:2];
     moreVC.tabBarItem=[[UITabBarItem alloc] initWithTitle:@"更多" image:nil tag:3];
-    self.viewControllers=[NSArray arrayWithObjects:mainpageVC,newsVC,personalVC,moreVC,nil];
+    self.viewControllers=[NSArray arrayWithObjects:mainpageVC,newsVC,personalNC,moreVC,nil];
     // Do any additional setup after loading the view.
 }
 

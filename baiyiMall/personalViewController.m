@@ -7,6 +7,8 @@
 //
 
 #import "personalViewController.h"
+#import "myShopViewController.h"
+#import "setMyShopViewController.h"
 #import <AVOSCloud/AVOSCloud.h>
 
 @interface personalViewController ()
@@ -50,6 +52,7 @@
     
     UIButton *myShopBtn=[[UIButton alloc] initWithFrame:CGRectMake(20,230,50,50)];
     [myShopBtn setBackgroundColor:[UIColor redColor]];
+    [myShopBtn addTarget:self action:@selector(showMyShop:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:myShopBtn];
     
     UIButton *followShopBtn=[[UIButton alloc] initWithFrame:CGRectMake(80,230,50,50)];
@@ -67,6 +70,22 @@
 {
     UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"提示" message:@"确定要修改头像？" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",@"取消", nil];
     [alert show];
+}
+
+- (void)showMyShop:(UIButton *)btn
+{
+    AVUser *user=[AVUser currentUser];
+    if([user objectForKey:@"myShop"])
+    {
+        myShopViewController *myShopVC=[[myShopViewController alloc] init];
+        [self.navigationController pushViewController:myShopVC animated:YES];
+    }
+    else
+    {
+        setMyShopViewController *setMyShopVC=[[setMyShopViewController alloc] init];
+        [self.navigationController pushViewController:setMyShopVC animated:YES];
+    }
+
 }
 
 #pragma marks --UIAlertViewDelegate
